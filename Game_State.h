@@ -3,7 +3,7 @@
 #include "Master.h"
 
 class Application;
-struct Entity;
+struct Camera;
 
 
 namespace renderer
@@ -18,8 +18,8 @@ namespace State
 		public:
 			Game_State(Application& application);
 
-			virtual void input	(Entity& camera) = 0;
-			virtual void update	(Entity& camera) = 0;
+			virtual void input	(Camera& camera) = 0;
+			virtual void update	(Camera& camera, float dt) = 0;
 			virtual void draw	(Renderer::Master& renderer) = 0;
 
 		protected:

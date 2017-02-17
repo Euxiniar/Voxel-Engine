@@ -25,6 +25,9 @@ namespace Display
 		glewInit();
 		glViewport(0, 0, WIDTH, HEIGHT);
 
+		glEnable(GL_DEPTH_TEST);
+
+		window->setMouseCursorVisible(false);
 	}
 
 
@@ -52,7 +55,7 @@ namespace Display
 		//Si la croix est appuyée, on appelle la fonction de fermeture
 		sf::Event ev;
 		while(window->pollEvent(ev))
-			if (ev.type == sf::Event::Closed)
+			if (ev.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
 			{
 				close();
 			}
@@ -62,5 +65,10 @@ namespace Display
 	{
 		//retourne l'état de la fenêtre
 		return window->isOpen();
+	}
+
+	const sf::Window& get()
+	{
+		return *window;
 	}
 }

@@ -10,7 +10,6 @@ namespace Texture
 
 		sf::Image image;
 		image.loadFromFile(filePath);
-		image.flipVertically();
 
 		glGenTextures(1, &m_textureId);
 		glBindTexture(GL_TEXTURE_2D, m_textureId);

@@ -3,7 +3,7 @@
 #include "Master.h"
 #include <iostream>
 #include <SFML/System/Clock.hpp>
-
+#include "Camera.h"
 
 namespace State
 {
@@ -19,13 +19,14 @@ namespace State
 		m_quad.position.z = - 3;
 	}
 
-	void Playing::input(Entity& camera)
+	void Playing::input(Camera& camera)
 	{
 	}
 
-	void Playing::update(Entity& camera)
+	void Playing::update(Camera& camera, float dt)
 	{
-		m_quad.rotation.x = sin(clock.getElapsedTime().asSeconds()) * 360;
+		camera.input(dt);
+		//m_quad.rotation.x = sin(clock.getElapsedTime().asSeconds()) * 360;
 	}
 
 	void Playing::draw(Renderer::Master& renderer)

@@ -4,7 +4,7 @@
 #include <SFML/System/Clock.hpp>
 
 class Quad;
-struct Entity;
+struct Camera;
 
 namespace Renderer
 {
@@ -12,7 +12,7 @@ namespace Renderer
 	{
 		public: 
 			void draw(const Quad& quad);
-			void update(const Entity& camera);
+			void update(const Camera& camera);
 
 		private:
 			void prepare(const Quad& quad);

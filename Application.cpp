@@ -10,16 +10,20 @@ Application::Application()
 
 void Application::runMainGameLoop()
 {
+	sf::Clock clock;
+
 	//tant que la fenêtre est ouverte
 	while (Display::isOpen())
 	{
+		auto dt = clock.restart().asSeconds();
+
 		//on efface l'écran
 		m_renderer.clear();
 
 		//On sélectionne le Last In et on appelle les fonctions inputs update et draw
 		//(les fonctions appelées seront celles des enfants de Game_State
 		m_states.top()->input(camera);
-		m_states.top()->update(camera);
+		m_states.top()->update(camera, dt);
 		m_states.top()->draw(m_renderer);
 
 		//On rafraichit le contexte OpenGL
