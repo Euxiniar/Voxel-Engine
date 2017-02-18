@@ -26,7 +26,7 @@ namespace State
 	void Playing::update(Camera& camera, float dt)
 	{
 		camera.input(dt);
-		//m_quad.rotation.x = sin(clock.getElapsedTime().asSeconds()) * 360;
+		//m_quad.rotation.y = sin(clock.getElapsedTime().asSeconds()) * 360;
 	}
 
 	void Playing::draw(Renderer::Master& renderer)

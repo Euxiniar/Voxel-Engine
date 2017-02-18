@@ -16,19 +16,20 @@ namespace Display
 		settings.minorVersion = 3;
 		
 		//On crée notre fenêtre
-		window = std::make_unique<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT), 
+		window = std::make_unique<sf::RenderWindow>(sf::VideoMode(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height),
 			"Window", 
-			sf::Style::Close, 
+			sf::Style::None, 
 			settings);
 
 		//on initialise glew pour pouvoir utiliser OpenGL
 		glewInit();
-		glViewport(0, 0, WIDTH, HEIGHT);
+		glViewport(0, 0, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height);
 
 		glEnable(GL_DEPTH_TEST);
 
 		window->setMouseCursorVisible(false);
 		window->setFramerateLimit(60);
+		window->setVerticalSyncEnabled(true);
 	}
 
 
