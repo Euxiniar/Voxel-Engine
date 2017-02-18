@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\States">
+      <UniqueIdentifier>{bec7dad0-8424-4eef-9385-06551adc1e46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\States">
+      <UniqueIdentifier>{2b3f7ef1-8f1c-44c5-a0f6-53251233e597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Affichage">
+      <UniqueIdentifier>{be9da0c4-720b-466b-8772-2ecf37ed3438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Affichage">
+      <UniqueIdentifier>{e297e1a7-5242-415d-bf37-d8f0e034174c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Shaders">
+      <UniqueIdentifier>{b2d67ecd-ff8a-4aa9-8803-095a550d8e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Shader">
+      <UniqueIdentifier>{98067c79-05a1-413b-b42a-093304ba7b14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{78903a34-7639-4e56-b0f3-cba1844fe0e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders">
+      <UniqueIdentifier>{00379fbb-34dc-4120-b673-e28c3fcea650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Texture">
+      <UniqueIdentifier>{9b90716c-43fc-4974-af99-58e841d488e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Texture">
+      <UniqueIdentifier>{b210dce3-d33b-41f5-bbca-28422133ee7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Renderer">
+      <UniqueIdentifier>{57cfb74a-650a-4faa-9435-0add52896a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Renderer">
+      <UniqueIdentifier>{d438f0b3-8d04-479f-87bb-f549fdc109d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Temp">
+      <UniqueIdentifier>{30278cdc-2183-4e28-b98d-d81aefe1e033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Temp">
+      <UniqueIdentifier>{893cfd97-e2f3-472c-a5fb-e62b462a24a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Maths">
+      <UniqueIdentifier>{93f0c515-ad57-4251-b16b-0e9168c402fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Maths">
+      <UniqueIdentifier>{a392cd5e-ad8c-4e92-a371-b6554ad7e05c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glew32.dll" />
+    <None Include="Data\Shaders\Simple_Fragment.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Simple_Vertex.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Playing.cpp">
+      <Filter>Fichiers sources\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_State.cpp">
+      <Filter>Fichiers sources\States</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Fichiers sources\Affichage</Filter>
+    </ClCompile>
+    <ClCompile Include="Display.cpp">
+      <Filter>Fichiers sources\Affichage</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Fichiers sources\Affichage</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader_Program.cpp">
+      <Filter>Fichiers sources\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader_Loader.cpp">
+      <Filter>Fichiers sources\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Shader.cpp">
+      <Filter>Fichiers sources\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Fichiers sources\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Master.cpp">
+      <Filter>Fichiers sources\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad.cpp">
+      <Filter>Fichiers sources\Temp</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple.cpp">
+      <Filter>Fichiers sources\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Fichiers sources\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Fichiers sources\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game_State.h">
+      <Filter>Fichiers d%27en-tête\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Playing.h">
+      <Filter>Fichiers d%27en-tête\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Fichiers d%27en-tête\Affichage</Filter>
+    </ClInclude>
+    <ClInclude Include="Display.h">
+      <Filter>Fichiers d%27en-tête\Affichage</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader_Program.h">
+      <Filter>Fichiers d%27en-tête\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader_Loader.h">
+      <Filter>Fichiers d%27en-tête\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Shader.h">
+      <Filter>Fichiers d%27en-tête\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Fichiers d%27en-tête\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Master.h">
+      <Filter>Fichiers d%27en-tête\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple.h">
+      <Filter>Fichiers d%27en-tête\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Glm_Common.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad.h">
+      <Filter>Fichiers d%27en-tête\Temp</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Fichiers d%27en-tête\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Fichiers d%27en-tête\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Minecraft.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

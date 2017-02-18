@@ -7,7 +7,7 @@
 #include "Quad.h"
 
 class Application; 
-class Camera;
+struct Camera;
 
 namespace State
 {

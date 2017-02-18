@@ -1,12 +1,12 @@
 #pragma once
 #include "Entity.h"
 
-class Camera : public Entity
+struct Camera : public Entity
 {
 	public:
 		void input(float dt);
 
 	private: 
-		void mouseInput();
+		void mouseInput(float dtMouse);
 };
 

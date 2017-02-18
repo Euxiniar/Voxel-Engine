@@ -14,7 +14,7 @@ namespace Display
 		settings.depthBits = 24;
 		settings.majorVersion = 3;
 		settings.minorVersion = 3;
-
+		
 		//On crée notre fenêtre
 		window = std::make_unique<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT), 
 			"Window", 
@@ -28,6 +28,7 @@ namespace Display
 		glEnable(GL_DEPTH_TEST);
 
 		window->setMouseCursorVisible(false);
+		window->setFramerateLimit(60);
 	}
 
 

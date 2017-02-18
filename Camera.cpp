@@ -37,19 +37,19 @@ void Camera::input(float dt)
 	}
 
 	position += change * dt;
-
-	mouseInput();
+	float dtMouse = 0.3f;
+	mouseInput(dtMouse);
 }
 
 
-void Camera::mouseInput()
+void Camera::mouseInput(float dtMouse)
 {
 	static sf::Vector2i lastMousePosition;
 
 	auto mouseChange = sf::Mouse::getPosition() - lastMousePosition;
 
-	rotation.y += mouseChange.x;
-	rotation.x += mouseChange.y;
+	rotation.y += mouseChange.x * dtMouse;
+	rotation.x += mouseChange.y * dtMouse;
 
 	if (rotation.x > 80)
 	{
