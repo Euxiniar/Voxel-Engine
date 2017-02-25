@@ -1,7 +1,7 @@
 #pragma once
 #include "Entity.h"
 
-struct Camera : public Entity
+class Camera : public Entity
 {
 	public:
 		void input(float dt);

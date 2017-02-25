@@ -4,7 +4,7 @@
 #include "Glm_Common.h"
 
 struct Entity;
-struct Camera;
+class Camera;
 
 
 namespace Maths

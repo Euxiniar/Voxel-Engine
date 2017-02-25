@@ -16,14 +16,14 @@ namespace Display
 		settings.minorVersion = 3;
 		
 		//On crée notre fenêtre
-		window = std::make_unique<sf::RenderWindow>(sf::VideoMode(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height),
+		window = std::make_unique<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT/*sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height*/),
 			"Window", 
-			sf::Style::None, 
+			sf::Style::Close, 
 			settings);
 
 		//on initialise glew pour pouvoir utiliser OpenGL
 		glewInit();
-		glViewport(0, 0, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height);
+		glViewport(0, 0, WIDTH, HEIGHT);//sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height);
 
 		glEnable(GL_DEPTH_TEST);
 

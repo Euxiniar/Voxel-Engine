@@ -26,8 +26,8 @@ void Camera::input(float dt)
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
 	{
-		change.x += -cos(glm::radians(rotation.y)) * speed;
-		change.z += -sin(glm::radians(rotation.y)) * speed;
+		change.x -= cos(glm::radians(rotation.y)) * speed;
+		change.z -= sin(glm::radians(rotation.y)) * speed;
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))

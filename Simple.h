@@ -4,7 +4,7 @@
 #include <SFML/System/Clock.hpp>
 
 class Quad;
-struct Camera;
+class Camera;
 
 namespace Renderer
 {

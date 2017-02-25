@@ -81,7 +81,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Minecraft\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>flac.lib;freetype.lib;glew32.lib;glew32s.lib;jpeg.lib;ogg.lib;openal32.lib;OpenGL32.lib;sfml-audio-s-d.lib;sfml-graphics-s-d.lib;sfml-main-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>flac.lib;freetype.lib;glew32.lib;glew32s.lib;jpeg.lib;ogg.lib;openal32.lib;OpenGL32.lib;sfml-audio-s-d.lib;sfml-graphics-s-d.lib;sfml-main-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;winmm.lib;gdi32.lib;libnoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -106,7 +106,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Minecraft\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>flac.lib;freetype.lib;glew32.lib;glew32s.lib;jpeg.lib;ogg.lib;openal32.lib;OpenGL32.lib;sfml-audio-s.lib;sfml-graphics-s.lib;sfml-main.lib;sfml-system-s.lib;sfml-window-s.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>flac.lib;freetype.lib;glew32.lib;glew32s.lib;jpeg.lib;ogg.lib;openal32.lib;OpenGL32.lib;sfml-audio-s.lib;sfml-graphics-s.lib;sfml-main.lib;sfml-system-s.lib;sfml-window-s.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;winmm.lib;gdi32.lib;libnoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <SubSystem>Windows</SubSystem>
     </Link>
@@ -147,6 +147,7 @@
     <ClCompile Include="Simple.cpp" />
     <ClCompile Include="Simple_Shader.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Texture_Atlas.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Simple.h" />
     <ClInclude Include="Simple_Shader.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="Texture_Atlas.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Minecraft.rc" />

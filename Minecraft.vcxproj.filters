@@ -121,6 +121,9 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="Texture_Atlas.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_State.h">
@@ -176,6 +179,9 @@
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture_Atlas.h">
+      <Filter>Fichiers d%27en-tête\Texture</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

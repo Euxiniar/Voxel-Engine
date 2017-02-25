@@ -3,7 +3,7 @@
 #include "Simple.h"
 
 class Quad;
-struct Camera; 
+class Camera; 
 
 namespace Renderer
 {

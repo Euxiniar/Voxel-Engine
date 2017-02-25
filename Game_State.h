@@ -3,7 +3,7 @@
 #include "Master.h"
 
 class Application;
-struct Camera;
+class Camera;
 
 
 namespace renderer
