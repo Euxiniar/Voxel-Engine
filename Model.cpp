@@ -30,13 +30,19 @@ void Model::addData(const std::vector<GLfloat>& vertexPositions,
 	glDeleteBuffers(m_buffers.size(), m_buffers.data());
 
 	m_indicesCount = indices.size();
+
+	//on assigne à OpenGL de la place pour stocker le tableau et la lire 
 	glGenVertexArrays(1, &m_vao);
+
+	//on selectionne le tableau qu'on utilise comme étant 2D. 
 	glBindVertexArray(m_vao);
 
+	//on ajoute de la ram pour gérer les vertex et les textures
 	addVBO(3, vertexPositions);
 	addVBO(2, textureCoordinates);
 	addEBO(indices);
 
+	//on déselectionne tout
 	glBindVertexArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
@@ -62,10 +68,15 @@ void Model::addVBO(int dim, const std::vector<GLfloat>& data)
 	GLuint vbo;
 	glGenBuffers(1, &vbo);
 	glBindBuffer(GL_ARRAY_BUFFER, vbo);
+
+	//on alloue de la RAM à notre vbo. 
+	//C'est un objet rarement mis a jour donc il est static
+	//on lui envoie aussi les données à afficher
 	glBufferData(GL_ARRAY_BUFFER,
-		data.size() * sizeof(data[0]),
+		data.size() * sizeof(GLfloat),
 		data.data(),
 		GL_STATIC_DRAW);
+
 	glVertexAttribPointer(m_vboCount,
 		dim,
 		GL_FLOAT,
@@ -73,8 +84,10 @@ void Model::addVBO(int dim, const std::vector<GLfloat>& data)
 		0,
 		(GLvoid*)0);
 
+	//on active le tableau puis on incrémente l'ID du tableau
 	glEnableVertexAttribArray(m_vboCount++);
 
+	//on stock l'ID du vbo courant dans le tableau m_buffers
 	m_buffers.push_back(vbo);
 }
 
@@ -85,7 +98,7 @@ void Model::addEBO(const std::vector<GLuint>& indices)
 	glGenBuffers(1, &ebo);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER,
-		indices.size() * sizeof(indices[0]),
+		indices.size() * sizeof(GLuint),
 		indices.data(),
 		GL_STATIC_DRAW);
 	m_buffers.push_back(ebo);

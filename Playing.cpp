@@ -4,7 +4,6 @@
 #include <SFML/System/Clock.hpp>
 
 #include "Master.h"
-
 #include "Camera.h"
 
 namespace State
