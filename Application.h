@@ -19,7 +19,11 @@ class Application
 
 	private:
 		std::stack <std::unique_ptr<State::Game_State>> m_states;
+
+		//on crée un objet de type Master
 		Renderer::Master m_renderer;
+
+		//on crée une caméra
 		Camera camera;
 };
 

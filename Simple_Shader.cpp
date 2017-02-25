@@ -3,12 +3,16 @@
 
 namespace Shader
 {
+	//en se construisant, simple_shader crée un Shader_program
 	Simple_Shader::Simple_Shader()
 	: Shader_Program("Simple_Vertex", "Simple_Fragment")
 	{
 		getUniformLocations();
 
+		//on appelle la fonction bind héritée de Shader_Program
 		bind();
+
+		//on appelle la fonction loadMatrix4 de Shader_Program
 		loadMatrix4(m_locationProjMatrix, Maths::createProjMatrix());
 		unbind();
 	}
@@ -35,6 +39,7 @@ namespace Shader
 
 	void Simple_Shader::getUniformLocations()
 	{
+		//on récupère la localisation de toutesles variables
 		m_locationTime			=	glGetUniformLocation(getId(), "time");
 		m_locationViewMatrix	=	glGetUniformLocation(getId(), "viewMatrix");
 		m_locationModelMatrix	=	glGetUniformLocation(getId(), "modelMatrix");

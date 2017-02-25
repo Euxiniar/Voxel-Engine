@@ -15,7 +15,7 @@ namespace Renderer
 			void draw(const Quad& model);
 
 			private:
+				//on crée un objet de type Simple
 				Simple m_simpleRenderer;
-
 	};
 }

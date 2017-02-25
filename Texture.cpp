@@ -37,17 +37,18 @@ namespace Texture
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
 		//on déselectionne la texture
-		glBindTexture(GL_TEXTURE_2D, 0);		
+		glDisable(GL_TEXTURE_2D);
 	}
 
 	void Basic_Texture::bind()
 	{
+		//on selectionne la texture
 		glBindTexture(GL_TEXTURE_2D, m_textureId);
 	}
 
 	void Basic_Texture::unbind()
 	{
-		glBindTexture(GL_TEXTURE_2D, 0);
+		glDisable(GL_TEXTURE_2D);
 	}
 }
 

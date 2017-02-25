@@ -3,8 +3,9 @@
 
 namespace Shader 
 {
+	//on appelle la fonction loadShader (dans le shaderLoader) pour activer le programme
 	Shader_Program::Shader_Program(const std::string & vertexShaderFile, const std::string & fragmentShaderFile)
-		: m_programId(loadShader(vertexShaderFile, fragmentShaderFile))
+		: m_programId(Shader::loadShader(vertexShaderFile, fragmentShaderFile))
 	{
 	}
 
@@ -15,16 +16,19 @@ namespace Shader
 
 	void Shader_Program::bind()
 	{
+		//on sélectionne le programme pour l'utiliser
 		glUseProgram(m_programId);
 	}
 
 	void Shader_Program::unbind()
 	{
+		//on déselectionne le program
 		glUseProgram(0);
 	}
 
 	GLuint Shader_Program::getId() const
 	{
+		//on retourne l'id du programme généré avec loadShader
 		return m_programId;
 	}
 

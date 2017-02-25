@@ -19,6 +19,7 @@ namespace Renderer
 
 			std::vector<const Quad *> m_quads;
 
+			//on crée un objet de type Simple_Shader
 			Shader::Simple_Shader m_shader;
 
 			sf::Clock m_clock;
