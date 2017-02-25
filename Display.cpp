@@ -25,6 +25,7 @@ namespace Display
 		glewInit();
 		glViewport(0, 0, WIDTH, HEIGHT);//sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height);
 
+		//permet qu'il n'y ait pas d'errer de superposition des faces
 		glEnable(GL_DEPTH_TEST);
 
 		window->setMouseCursorVisible(false);

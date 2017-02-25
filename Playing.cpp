@@ -9,8 +9,7 @@
 
 namespace State
 {
-	sf::Clock clock;
-
+	//en créant l'appli, on crée un objet playing qui aura en argument l'appli, chargera la texture, et l'appliquera sur le cube
 	Playing::Playing(Application& application)
 		: Game_State(application)
 		, m_texture("Texture_Atlas", 512, 16)

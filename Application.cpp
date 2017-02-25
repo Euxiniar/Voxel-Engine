@@ -4,7 +4,7 @@
 
 Application::Application()
 {
-	//On appelle la fonction pushState en lui passant l'app courante en argument (Playing hérite de Game_State donc ca fonctionne)
+	//On crée un objet playing qu'on stock dans un stack de type game_state (playing hérite de Game_State)
 	pushState(std::make_unique<State::Playing>(*this));
 }
 
