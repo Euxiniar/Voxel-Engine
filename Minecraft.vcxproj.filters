@@ -61,6 +61,9 @@
     <Filter Include="Fichiers sources\Maths">
       <UniqueIdentifier>{a392cd5e-ad8c-4e92-a371-b6554ad7e05c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Textures">
+      <UniqueIdentifier>{e779622e-50f3-4749-9551-96984a15802d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="glew32.dll" />
@@ -122,7 +125,7 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Texture_Atlas.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Texture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -188,5 +191,10 @@
     <ResourceCompile Include="Minecraft.rc">
       <Filter>Fichiers de ressources</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\Textures\Texture_Atlas.png">
+      <Filter>Data\Textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>

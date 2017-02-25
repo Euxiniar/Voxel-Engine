@@ -173,6 +173,9 @@
   <ItemGroup>
     <ResourceCompile Include="Minecraft.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\Textures\Texture_Atlas.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

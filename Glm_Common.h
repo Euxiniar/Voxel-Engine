@@ -4,6 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+//Simplification de la lisibilité
 typedef glm::vec2 Vector2;
 typedef glm::vec3 Vector3;
 typedef glm::vec4 Vector4;

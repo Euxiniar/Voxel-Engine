@@ -4,8 +4,6 @@
 
 #include "Texture_Atlas.h"
 
-namespace
-{
 	std::vector<GLfloat> vertexPositions =
 	{
 		//Back
@@ -71,12 +69,14 @@ namespace
 
 	void insertTextureCoords(const std::vector<GLfloat>& coords)
 	{
+		//on se positionne à la derniere place du tableau (qui est vide au début) et on rempli de coordonnées)
 		textureCoords.insert(textureCoords.end(), coords.begin(), coords.end());
 	}
-}
+
 
 Quad::Quad(Texture::Atlas& textureAtlas)
 {
+	//on crée le tableau de textures
 	insertTextureCoords(textureAtlas.getTextureCoords({ 1, 0 }));
 	insertTextureCoords(textureAtlas.getTextureCoords({ 1, 0 }));
 	insertTextureCoords(textureAtlas.getTextureCoords({ 1, 0 }));
