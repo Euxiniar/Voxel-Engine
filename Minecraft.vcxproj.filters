@@ -64,6 +64,24 @@
     <Filter Include="Data\Textures">
       <UniqueIdentifier>{e779622e-50f3-4749-9551-96984a15802d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\World">
+      <UniqueIdentifier>{d8997b09-cf71-4998-a53c-ace22477f763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\World">
+      <UniqueIdentifier>{41b04762-c151-4e70-8cea-934ab08de01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\World\Block">
+      <UniqueIdentifier>{204ff63a-075f-45b2-98a0-8fcc437b4cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\World\Block\Block_Types">
+      <UniqueIdentifier>{229292d1-c4ab-4be8-87bc-44f87f4a5878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\World\Block">
+      <UniqueIdentifier>{aa984c29-53bb-4b36-8ac0-5028667eff02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\World\Block\Block_Types">
+      <UniqueIdentifier>{6414ebac-6c0f-449f-8d86-776bd2035fc8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="glew32.dll" />
@@ -127,6 +145,21 @@
     <ClCompile Include="Texture_Atlas.cpp">
       <Filter>Fichiers sources\Texture</Filter>
     </ClCompile>
+    <ClCompile Include="Grass.cpp">
+      <Filter>Fichiers sources\World\Block\Block_Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Block_Type.cpp">
+      <Filter>Fichiers sources\World\Block\Block_Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Air.cpp">
+      <Filter>Fichiers sources\World\Block\Block_Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Block_Data.cpp">
+      <Filter>Fichiers sources\World\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Block_Database.cpp">
+      <Filter>Fichiers sources\World\Block</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_State.h">
@@ -185,6 +218,24 @@
     </ClInclude>
     <ClInclude Include="Texture_Atlas.h">
       <Filter>Fichiers d%27en-tête\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Block_Data.h">
+      <Filter>Fichiers d%27en-tête\World\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Block_Database.h">
+      <Filter>Fichiers d%27en-tête\World\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Block_ID.h">
+      <Filter>Fichiers d%27en-tête\World\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Block_Type.h">
+      <Filter>Fichiers d%27en-tête\World\Block\Block_Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Air.h">
+      <Filter>Fichiers d%27en-tête\World\Block\Block_Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass.h">
+      <Filter>Fichiers d%27en-tête\World\Block\Block_Types</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
