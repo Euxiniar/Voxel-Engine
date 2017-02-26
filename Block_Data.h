@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include "Block_ID.h"
+#include "Glm_Common.h"
 
 namespace Block
 {
@@ -8,5 +10,12 @@ namespace Block
 		public:
 			Data(const std::string& fileName);
 
+	private:
+		ID m_blockID;
+		std::string m_name;
+		bool m_isOpaque;
+		Vector2 m_topTextureCoords;
+		Vector2 m_sideTextureCoords;
+		Vector2 m_bottomTextureCoords;
 	};
 }

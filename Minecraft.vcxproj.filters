@@ -82,6 +82,9 @@
     <Filter Include="Fichiers sources\World\Block\Block_Types">
       <UniqueIdentifier>{6414ebac-6c0f-449f-8d86-776bd2035fc8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Blocks">
+      <UniqueIdentifier>{08cc091b-79f0-4749-8cce-780af40bb4d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="glew32.dll" />
@@ -92,6 +95,12 @@
       <Filter>Data\Shaders</Filter>
     </None>
     <None Include="ClassDiagram.cd" />
+    <None Include="Air.block">
+      <Filter>Data\Blocks</Filter>
+    </None>
+    <None Include="Grass.block">
+      <Filter>Data\Blocks</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Playing.cpp">
