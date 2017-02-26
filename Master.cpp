@@ -6,6 +6,7 @@ namespace Renderer
 {
 	void Master::clear()
 	{
+		//on efface l'écran
 		Display::clear();
 	}
 

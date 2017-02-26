@@ -15,6 +15,7 @@ void Application::runMainGameLoop()
 	//tant que la fenêtre est ouverte
 	while (Display::isOpen())
 	{
+		//temps écoulé a chaque execution de la boucle
 		auto dt = clock.restart().asSeconds();
 
 		//on efface l'écran

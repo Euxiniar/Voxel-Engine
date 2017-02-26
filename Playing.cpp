@@ -27,6 +27,7 @@ namespace State
 	void Playing::update(Camera& camera, float dt)
 	{
 		m_quad.rotation += .1;
+		//on appelle les input de la camera
 		camera.input(dt);
 	}
 

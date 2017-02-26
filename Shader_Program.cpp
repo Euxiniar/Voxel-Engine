@@ -44,6 +44,8 @@ namespace Shader
 
 	void Shader_Program::loadMatrix4(GLuint location, const Matrix4 & matrix)
 	{
+		//on charge la matrice dans la variable du dhader sélectionnée
 		glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(matrix));
+		
 	}
 }

@@ -27,6 +27,8 @@ void Model::addData(const std::vector<GLfloat>& vertexPositions,
 	const std::vector<GLuint>&  indices)
 {
 	glDeleteVertexArrays(1, &m_vao);
+
+	//on réinitialise la RAM
 	glDeleteBuffers(m_buffers.size(), m_buffers.data());
 
 	m_indicesCount = indices.size();
@@ -34,10 +36,10 @@ void Model::addData(const std::vector<GLfloat>& vertexPositions,
 	//on assigne à OpenGL de la place pour stocker le tableau et la lire 
 	glGenVertexArrays(1, &m_vao);
 
-	//on selectionne le tableau qu'on utilise comme étant 2D. 
+	//on selectionne le tableau. 
 	glBindVertexArray(m_vao);
 
-	//on ajoute de la ram pour gérer les vertex et les textures
+	//on attribue de la ram pour gérer les vertex et les textures
 	addVBO(3, vertexPositions);
 	addVBO(2, textureCoordinates);
 	addEBO(indices);
@@ -66,23 +68,32 @@ GLuint Model::getIndicesCount() const
 void Model::addVBO(int dim, const std::vector<GLfloat>& data)
 {
 	GLuint vbo;
+	//on crée une case mémoire dans la ram de la carte graphique
 	glGenBuffers(1, &vbo);
+
+	//on la selectionne pour agir dessus
 	glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
-	//on alloue de la RAM à notre vbo. 
+	//on réserve de la RAM au vbo. 
 	//C'est un objet rarement mis a jour donc il est static
-	//on lui envoie aussi les données à afficher
 	glBufferData(GL_ARRAY_BUFFER,
 		data.size() * sizeof(GLfloat),
-		data.data(),
+		0,
 		GL_STATIC_DRAW);
 
+	//on envoie les données dans le buffer
+	glBufferSubData(GL_ARRAY_BUFFER,
+		0,
+		data.size() * sizeof(GLfloat),
+		data.data());
+
+	//on accède aux sommets dans la mémoire vidéo à la place m_vboCount
 	glVertexAttribPointer(m_vboCount,
 		dim,
 		GL_FLOAT,
 		GL_FALSE,
 		0,
-		(GLvoid*)0);
+		0);
 
 	//on active le tableau puis on incrémente l'ID du tableau
 	glEnableVertexAttribArray(m_vboCount++);

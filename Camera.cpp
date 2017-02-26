@@ -44,6 +44,17 @@ void Camera::input(float dt)
 
 void Camera::mouseInput(float dtMouse)
 {
+	auto centerX = Display::WIDTH / 2;
+	auto centerY = Display::HEIGHT / 2;
+
+	static bool begin = true;
+
+	if (begin)
+	{
+		sf::Mouse::setPosition(sf::Vector2i{ centerX, centerY }, Display::get());
+		begin = false;
+	}
+
 	static sf::Vector2i lastMousePosition;
 
 	auto mouseChange = sf::Mouse::getPosition() - lastMousePosition;
@@ -68,9 +79,7 @@ void Camera::mouseInput(float dtMouse)
 		rotation.y = 0;
 	}
 
-	auto centerX = Display::WIDTH / 2;
-	auto centerY = Display::HEIGHT / 2;
-
+	
 	sf::Mouse::setPosition(sf::Vector2i{ centerX, centerY }, Display::get());
 
 	lastMousePosition = sf::Mouse::getPosition();

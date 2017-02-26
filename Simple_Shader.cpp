@@ -14,6 +14,8 @@ namespace Shader
 
 		//on appelle la fonction loadMatrix4 de Shader_Program
 		loadMatrix4(m_locationProjMatrix, Maths::createProjMatrix());
+
+		//on délie le program
 		unbind();
 	}
 
@@ -39,7 +41,7 @@ namespace Shader
 
 	void Simple_Shader::getUniformLocations()
 	{
-		//on récupère la localisation de toutesles variables
+		//on récupère la localisation de toutes les variables
 		m_locationTime			=	glGetUniformLocation(getId(), "time");
 		m_locationViewMatrix	=	glGetUniformLocation(getId(), "viewMatrix");
 		m_locationModelMatrix	=	glGetUniformLocation(getId(), "modelMatrix");

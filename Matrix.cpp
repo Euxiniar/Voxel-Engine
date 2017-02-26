@@ -33,6 +33,7 @@ namespace Maths
 
 	Matrix4 createProjMatrix()
 	{
+		//on crée la matrice de projection, qui correspondra à la vue de la caméra
 		return glm::perspective(70.0f,
 								(float)Display::WIDTH/ (float)Display::HEIGHT,
 								0.001f,
