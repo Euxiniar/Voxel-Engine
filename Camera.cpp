@@ -4,8 +4,16 @@
 
 #include <SFML/Window/Keyboard.hpp>
 #include <SFML/Window/Mouse.hpp>
+#include <iostream>
 
-#include "Display.h"
+Camera::Camera()
+{
+	sf::Mouse::setPosition(sf::Vector2i{ centerX, centerY }, Display::get());
+	
+	rotation.x = 0;
+	rotation.y = 0;
+	rotation.z = 0;
+}
 
 void Camera::input(float dt)
 {
@@ -36,27 +44,18 @@ void Camera::input(float dt)
 		change.z += sin(glm::radians(rotation.y)) * speed;
 	}
 
-	position += change * dt;
+
 	float dtMouse = 0.3f;
+
 	mouseInput(dtMouse);
+	
 }
 
 
 void Camera::mouseInput(float dtMouse)
 {
-	auto centerX = Display::WIDTH / 2;
-	auto centerY = Display::HEIGHT / 2;
-
-	static bool begin = true;
-
-	if (begin)
-	{
-		sf::Mouse::setPosition(sf::Vector2i{ centerX, centerY }, Display::get());
-		begin = false;
-	}
-
-	static sf::Vector2i lastMousePosition;
-
+	
+	static sf::Vector2i lastMousePosition = sf::Mouse::getPosition();
 	auto mouseChange = sf::Mouse::getPosition() - lastMousePosition;
 
 	rotation.y += mouseChange.x * dtMouse;
@@ -79,7 +78,6 @@ void Camera::mouseInput(float dtMouse)
 		rotation.y = 0;
 	}
 
-	
 	sf::Mouse::setPosition(sf::Vector2i{ centerX, centerY }, Display::get());
 
 	lastMousePosition = sf::Mouse::getPosition();
