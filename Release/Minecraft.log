@@ -1,23 +1,27 @@
-﻿  Application.cpp
+﻿  Air.cpp
+  Application.cpp
+  Block_Data.cpp
+  Block_Database.cpp
+  Block_Type.cpp
   Camera.cpp
-  Display.cpp
   Game_State.cpp
+  Grass.cpp
+  main.cpp
   Master.cpp
   Matrix.cpp
   Model.cpp
   Playing.cpp
   Quad.cpp
+  Shader_Loader.cpp
   Shader_Program.cpp
   Simple.cpp
   Simple_Shader.cpp
   Texture.cpp
-  Texture_Atlas.cpp
-  main.cpp
      Création de la bibliothèque C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.lib et de l'objet C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.exp
   Génération de code en cours
-  39 of 818 functions ( 4.8%) were compiled, the rest were copied from previous compilation.
-    7 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+  264 of 878 functions (30.1%) were compiled, the rest were copied from previous compilation.
+    63 functions were new in current compilation
+    61 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code
   Minecraft.vcxproj -> C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.exe
   Minecraft.vcxproj -> C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.pdb (Full PDB)

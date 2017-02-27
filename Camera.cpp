@@ -22,8 +22,8 @@ void Camera::input(float dt)
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
 	{
-		change.x -= cos(glm::radians(rotation.y + 90)) * speed;
-		change.z -= sin(glm::radians(rotation.y + 90)) * speed;
+		change.x -= cos(glm::radians(rotation.y + 90)) * speed; //0 initialement
+		change.z -= sin(glm::radians(rotation.y + 90)) * speed; //-speed initialement
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
@@ -44,11 +44,21 @@ void Camera::input(float dt)
 		change.z += sin(glm::radians(rotation.y)) * speed;
 	}
 
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
+	{
+		change.y -= sin(glm::radians(90.0f)) * speed;
+	}
 
-	float dtMouse = 0.3f;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	{
+		change.y += sin(glm::radians(90.0f)) * speed;
+	}
+
+	position += change * dt;
+
+	float dtMouse = 0.18f;
 
 	mouseInput(dtMouse);
-	
 }
 
 

@@ -16,7 +16,7 @@ namespace State
 	{
 		m_texture.bind();
 
-		m_quad.position.x -= 5;
+		m_quad.position.z -= 5;
 	}
 
 	void Playing::input(Camera& camera)
@@ -26,7 +26,7 @@ namespace State
 
 	void Playing::update(Camera& camera, float dt)
 	{
-		//m_quad.rotation.x += .5;
+		m_quad.rotation.x += .5;
 		
 		//on appelle les input de la camera
 		camera.input(dt);
