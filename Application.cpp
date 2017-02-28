@@ -1,6 +1,6 @@
 #include "Application.h"
 #include "Display.h"
-#include "Playing.h"
+#include "SPlaying.h"
 
 Application::Application()
 {

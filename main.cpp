@@ -1,8 +1,5 @@
 #include "Display.h"
-
 #include "Application.h"
-#include "Random.h"
-#include <iostream>
 
 int main()
 {

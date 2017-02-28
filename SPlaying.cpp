@@ -1,9 +1,9 @@
-#include "Playing.h"
+#include "SPlaying.h"
 
 #include <iostream>
 #include <SFML/System/Clock.hpp>
 
-#include "Master.h"
+#include "RMaster.h"
 #include "Camera.h"
 
 namespace State

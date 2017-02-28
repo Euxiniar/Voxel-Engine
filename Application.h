@@ -3,7 +3,7 @@
 #include <memory>
 
 #include "Game_State.h"
-#include "Master.h"
+#include "RMaster.h"
 #include "Entity.h"
 #include "Camera.h"
 

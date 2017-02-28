@@ -133,7 +133,7 @@
     <None Include="Grass.block" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Air.cpp" />
+    <ClCompile Include="BAir.cpp" />
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Block_Data.cpp" />
     <ClCompile Include="Block_Database.cpp" />
@@ -141,23 +141,23 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Display.cpp" />
     <ClCompile Include="Game_State.cpp" />
-    <ClCompile Include="Grass.cpp" />
+    <ClCompile Include="BGrass.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Master.cpp" />
-    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="RMaster.cpp" />
+    <ClCompile Include="Matrix_Maths.cpp" />
     <ClCompile Include="Model.cpp" />
-    <ClCompile Include="Playing.cpp" />
+    <ClCompile Include="SPlaying.cpp" />
     <ClCompile Include="Quad.cpp" />
-    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="Random_Maths.cpp" />
     <ClCompile Include="Shader_Loader.cpp" />
     <ClCompile Include="Shader_Program.cpp" />
-    <ClCompile Include="Simple.cpp" />
+    <ClCompile Include="RSimple.cpp" />
     <ClCompile Include="Simple_Shader.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Texture_Atlas.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Air.h" />
+    <ClInclude Include="BAir.h" />
     <ClInclude Include="Application.h" />
     <ClInclude Include="Block_Data.h" />
     <ClInclude Include="Block_Database.h" />
@@ -168,17 +168,17 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game_State.h" />
     <ClInclude Include="Glm_Common.h" />
-    <ClInclude Include="Grass.h" />
-    <ClInclude Include="Master.h" />
-    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="BGrass.h" />
+    <ClInclude Include="RMaster.h" />
+    <ClInclude Include="Matrix_Maths.h" />
     <ClInclude Include="Model.h" />
-    <ClInclude Include="Playing.h" />
+    <ClInclude Include="SPlaying.h" />
     <ClInclude Include="Quad.h" />
-    <ClInclude Include="Random.h" />
+    <ClInclude Include="Random_Maths.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Shader_Loader.h" />
     <ClInclude Include="Shader_Program.h" />
-    <ClInclude Include="Simple.h" />
+    <ClInclude Include="RSimple.h" />
     <ClInclude Include="Simple_Shader.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Texture_Atlas.h" />

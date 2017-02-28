@@ -1,6 +1,6 @@
-#include "Simple.h"
+#include "RSimple.h"
 #include "Quad.h"
-#include "Matrix.h"
+#include "Matrix_Maths.h"
 
 namespace Renderer
 {

@@ -103,9 +103,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Playing.cpp">
-      <Filter>Fichiers sources\States</Filter>
-    </ClCompile>
     <ClCompile Include="Game_State.cpp">
       <Filter>Fichiers sources\States</Filter>
     </ClCompile>
@@ -130,23 +127,11 @@
     <ClCompile Include="Texture.cpp">
       <Filter>Fichiers sources\Texture</Filter>
     </ClCompile>
-    <ClCompile Include="Master.cpp">
-      <Filter>Fichiers sources\Renderer</Filter>
-    </ClCompile>
     <ClCompile Include="Quad.cpp">
       <Filter>Fichiers sources\Temp</Filter>
     </ClCompile>
-    <ClCompile Include="Simple.cpp">
-      <Filter>Fichiers sources\Renderer</Filter>
-    </ClCompile>
     <ClCompile Include="Model.cpp">
       <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Random.cpp">
-      <Filter>Fichiers sources\Maths</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>Fichiers sources\Maths</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Fichiers sources</Filter>
@@ -154,13 +139,7 @@
     <ClCompile Include="Texture_Atlas.cpp">
       <Filter>Fichiers sources\Texture</Filter>
     </ClCompile>
-    <ClCompile Include="Grass.cpp">
-      <Filter>Fichiers sources\World\Block\Block_Types</Filter>
-    </ClCompile>
     <ClCompile Include="Block_Type.cpp">
-      <Filter>Fichiers sources\World\Block\Block_Types</Filter>
-    </ClCompile>
-    <ClCompile Include="Air.cpp">
       <Filter>Fichiers sources\World\Block\Block_Types</Filter>
     </ClCompile>
     <ClCompile Include="Block_Data.cpp">
@@ -169,12 +148,30 @@
     <ClCompile Include="Block_Database.cpp">
       <Filter>Fichiers sources\World\Block</Filter>
     </ClCompile>
+    <ClCompile Include="Matrix_Maths.cpp">
+      <Filter>Fichiers sources\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Random_Maths.cpp">
+      <Filter>Fichiers sources\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="RMaster.cpp">
+      <Filter>Fichiers sources\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RSimple.cpp">
+      <Filter>Fichiers sources\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="SPlaying.cpp">
+      <Filter>Fichiers sources\States</Filter>
+    </ClCompile>
+    <ClCompile Include="BAir.cpp">
+      <Filter>Fichiers sources\World\Block\Block_Types</Filter>
+    </ClCompile>
+    <ClCompile Include="BGrass.cpp">
+      <Filter>Fichiers sources\World\Block\Block_Types</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_State.h">
-      <Filter>Fichiers d%27en-tête\States</Filter>
-    </ClInclude>
-    <ClInclude Include="Playing.h">
       <Filter>Fichiers d%27en-tête\States</Filter>
     </ClInclude>
     <ClInclude Include="Application.h">
@@ -201,12 +198,6 @@
     <ClInclude Include="resource.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Master.h">
-      <Filter>Fichiers d%27en-tête\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple.h">
-      <Filter>Fichiers d%27en-tête\Renderer</Filter>
-    </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -215,12 +206,6 @@
     </ClInclude>
     <ClInclude Include="Quad.h">
       <Filter>Fichiers d%27en-tête\Temp</Filter>
-    </ClInclude>
-    <ClInclude Include="Matrix.h">
-      <Filter>Fichiers d%27en-tête\Maths</Filter>
-    </ClInclude>
-    <ClInclude Include="Random.h">
-      <Filter>Fichiers d%27en-tête\Maths</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Fichiers d%27en-tête</Filter>
@@ -240,10 +225,25 @@
     <ClInclude Include="Block_Type.h">
       <Filter>Fichiers d%27en-tête\World\Block\Block_Types</Filter>
     </ClInclude>
-    <ClInclude Include="Air.h">
+    <ClInclude Include="Matrix_Maths.h">
+      <Filter>Fichiers d%27en-tête\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Random_Maths.h">
+      <Filter>Fichiers d%27en-tête\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="RMaster.h">
+      <Filter>Fichiers d%27en-tête\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RSimple.h">
+      <Filter>Fichiers d%27en-tête\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SPlaying.h">
+      <Filter>Fichiers d%27en-tête\States</Filter>
+    </ClInclude>
+    <ClInclude Include="BAir.h">
       <Filter>Fichiers d%27en-tête\World\Block\Block_Types</Filter>
     </ClInclude>
-    <ClInclude Include="Grass.h">
+    <ClInclude Include="BGrass.h">
       <Filter>Fichiers d%27en-tête\World\Block\Block_Types</Filter>
     </ClInclude>
   </ItemGroup>

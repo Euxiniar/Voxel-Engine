@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Master.h"
+#include "RMaster.h"
 
 class Application;
 class Camera;
