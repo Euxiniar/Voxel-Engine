@@ -1,9 +1,9 @@
-﻿  SPlaying.cpp
-     Création de la bibliothèque C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.lib et de l'objet C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.exp
+﻿  Display.cpp
+     Création de la bibliothèque C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.lib et de l'objet C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.exp
   Génération de code en cours
-  4 of 950 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
-    1 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  0 of 950 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    31 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code
-  Minecraft.vcxproj -> C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.exe
-  Minecraft.vcxproj -> C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Release\Minecraft.pdb (Full PDB)
+  Minecraft.vcxproj -> C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.exe
+  Minecraft.vcxproj -> C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.pdb (Full PDB)
