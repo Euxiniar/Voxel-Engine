@@ -12,6 +12,8 @@ namespace Block
 		protected:
 			Type(const std::string& fileName);
 
+			const Data& getData() const;
+
 		private:
 			Data m_data;
 	};

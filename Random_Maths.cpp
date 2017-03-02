@@ -3,23 +3,24 @@
 
 namespace Random
 {
-
 	std::minstd_rand gen;
 
-	void Random::init()
+	void setSeed(int seed)
 	{
-		gen.seed(std::random_device{}());
+		gen.seed(seed);
 	}
 
-	int Random::intInRange(int low, int high)
+
+	int integer(int low, int high)
 	{
+		gen.seed(std::random_device{}());
 		std::uniform_int_distribution<int> dist(low, high);
 		return dist(gen);
 	}
 
-	float floatInRange(float low, float high)
+	double decimal(double low, double high)
 	{
-		std::uniform_real_distribution<float> dist(low, high);
+		std::uniform_real_distribution<double> dist(low, high);
 		return dist(gen);
 	}
 }

@@ -95,10 +95,10 @@
       <Filter>Data\Shaders</Filter>
     </None>
     <None Include="ClassDiagram.cd" />
-    <None Include="Air.block">
+    <None Include="Data\Blocks\Air.block">
       <Filter>Data\Blocks</Filter>
     </None>
-    <None Include="Grass.block">
+    <None Include="Data\Blocks\Grass.block">
       <Filter>Data\Blocks</Filter>
     </None>
   </ItemGroup>

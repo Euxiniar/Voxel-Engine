@@ -1,9 +1,12 @@
 #include "Application.h"
 #include "Display.h"
 #include "SPlaying.h"
+#include "Random_Maths.h"
+#include <iostream>
 
 Application::Application()
 {
+	init();
 	//On crée un objet playing qu'on stock dans un stack de type game_state (playing hérite de Game_State)
 	pushState(std::make_unique<State::Playing>(*this));
 }
@@ -33,6 +36,10 @@ void Application::runMainGameLoop()
 		//On regarde si on doit fermer
 		Display::CheckForClose();
 
+		//si le temps de la chnson est fini
+		if (m_songTimer.getElapsedTime() > m_songDuration)
+			resetSong();
+
 	}
 }
 
@@ -45,4 +52,33 @@ void Application::pushState(std::unique_ptr<State::Game_State> state)
 void Application::popState()
 {
 	m_states.pop();
+}
+
+void Application::resetSong()
+{
+	static std::string songFIlesPath = "Data/Music/";
+	static std::vector<std::string> songNames =
+	{
+		"Game_of_Thrones",
+		"Doctor_Who",
+	};
+
+	static auto lastSong = songNames.size();
+	auto thisSong = lastSong;
+
+	while (thisSong == lastSong)
+		thisSong = Random::integer(0, songNames.size()-1);
+
+	lastSong = thisSong;
+	m_song.openFromFile(songFIlesPath + songNames[thisSong] + ".ogg");
+	m_song.play();
+	m_songDuration = m_song.getDuration();
+	m_songTimer.restart();
+	m_song.setVolume(5);
+}
+
+void Application::init()
+{
+	//Start the music
+	resetSong();
 }

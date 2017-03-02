@@ -7,7 +7,7 @@ namespace Display
 {
 	std::unique_ptr<sf::RenderWindow> window;
 
-	void Display::init()
+	void Display::create(std::string title)
 	{
 		//on choisi les paramètres à appliquer a notre fenêtre
 		sf::ContextSettings settings;
@@ -17,7 +17,7 @@ namespace Display
 		
 		//On crée notre fenêtre
 		window = std::make_unique<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT/*sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height*/),
-			"Window", 
+			title, 
 			sf::Style::Close, 
 			settings);
 

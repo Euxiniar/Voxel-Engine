@@ -4,7 +4,7 @@
 int main()
 {
 	//On appelle la création de la fenêtre
-	Display::init();
+	Display::create("GrandmontCraft");
 	//on crée une app
 	Application app;
 	//lancement du programme

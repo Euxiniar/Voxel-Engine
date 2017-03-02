@@ -125,12 +125,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="Air.block" />
     <None Include="ClassDiagram.cd" />
+    <None Include="Data\Blocks\Air.block" />
+    <None Include="Data\Blocks\Grass.block" />
     <None Include="Data\Shaders\Simple_Fragment.glsl" />
     <None Include="Data\Shaders\Simple_Vertex.glsl" />
     <None Include="glew32.dll" />
-    <None Include="Grass.block" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BAir.cpp" />
