@@ -74,4 +74,10 @@ namespace Display
 	{
 		return *window;
 	}
+
+	bool isSelect()
+	{
+		
+		return window->hasFocus();
+	}
 }

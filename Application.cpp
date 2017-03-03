@@ -26,8 +26,12 @@ void Application::runMainGameLoop()
 
 		//On sélectionne le Last In et on appelle les fonctions inputs update et draw
 		//(les fonctions appelées seront celles des enfants de Game_State
-		m_states.top()->input(camera);
-		m_states.top()->update(camera, dt);
+		if (Display::isSelect())
+		{
+			m_states.top()->input(camera);
+			m_states.top()->update(camera, dt);
+		}
+
 		m_states.top()->draw(m_renderer);
 
 		//On rafraichit le contexte OpenGL

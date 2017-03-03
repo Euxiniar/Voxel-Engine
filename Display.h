@@ -18,6 +18,7 @@ namespace Display
 
 	void CheckForClose();
 	bool isOpen();
+	bool isSelect();
 
 	const sf::Window& get();
 }

@@ -13,11 +13,13 @@ namespace Renderer
 	void Simple::update(const Camera& camera)
 	{
 		m_shader.bind();
+		//on rempli la variable de temps du shader avec la vleur du temps
 		m_shader.setTime(m_clock.getElapsedTime().asSeconds());
 
+		//on passe la matrice de vue au shader (donc la camera)
 		m_shader.setViewMatrix(Maths::createViewMatrix(camera));
 
-		for (auto& quad : m_quads)
+		for (auto& quad : m_quads) //TODO comprendre cette ligne
 		{
 			prepare(*quad);
 			glDrawElements(GL_TRIANGLES, quad->getModel().getIndicesCount(), GL_UNSIGNED_INT, nullptr);
@@ -27,7 +29,8 @@ namespace Renderer
 
 	void Simple::prepare(const Quad & quad)
 	{
-		quad.getModel().bind();
+		quad.getModel().bind(); //on récupère le model
+		//on envoie la matrice de models (les quads) au shader
 		m_shader.setModelMatrix(Maths::createModelMatrix(quad));
 	}
 }

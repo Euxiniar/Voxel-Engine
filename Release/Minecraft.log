@@ -1,9 +1,15 @@
-﻿  Display.cpp
+﻿  Application.cpp
+  Camera.cpp
+  Display.cpp
+  Matrix_Maths.cpp
+  RMaster.cpp
+  SPlaying.cpp
+  main.cpp
      Création de la bibliothèque C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.lib et de l'objet C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.exp
   Génération de code en cours
-  0 of 950 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    31 functions had inline decision re-evaluated but remain unchanged
+  3 of 951 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    36 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code
   Minecraft.vcxproj -> C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.exe
   Minecraft.vcxproj -> C:\Users\Sandrine Agostini\Source\Repos\Voxel-Engine\Release\Minecraft.pdb (Full PDB)
