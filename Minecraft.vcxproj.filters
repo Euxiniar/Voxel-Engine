@@ -85,6 +85,12 @@
     <Filter Include="Data\Blocks">
       <UniqueIdentifier>{08cc091b-79f0-4749-8cce-780af40bb4d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\World\Chunk">
+      <UniqueIdentifier>{1e9723a1-a4ef-4e0e-bbb2-2b7ab668b6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\World\Chunk">
+      <UniqueIdentifier>{84fe6cdf-0c29-42ba-871f-4f98c788f8c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="glew32.dll" />
@@ -169,6 +175,15 @@
     <ClCompile Include="BGrass.cpp">
       <Filter>Fichiers sources\World\Block\Block_Types</Filter>
     </ClCompile>
+    <ClCompile Include="RChunk.cpp">
+      <Filter>Fichiers sources\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Chunklet.cpp">
+      <Filter>Fichiers sources\World\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="Block_Position.cpp">
+      <Filter>Fichiers sources\World\Block</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_State.h">
@@ -245,6 +260,15 @@
     </ClInclude>
     <ClInclude Include="BGrass.h">
       <Filter>Fichiers d%27en-tête\World\Block\Block_Types</Filter>
+    </ClInclude>
+    <ClInclude Include="RChunk.h">
+      <Filter>Fichiers d%27en-tête\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Chunklet.h">
+      <Filter>Fichiers d%27en-tête\World\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="Block_Position.h">
+      <Filter>Fichiers d%27en-tête\World\Block</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
