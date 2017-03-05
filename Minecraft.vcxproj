@@ -109,6 +109,7 @@
       <AdditionalDependencies>flac.lib;freetype.lib;glew32.lib;glew32s.lib;jpeg.lib;ogg.lib;openal32.lib;OpenGL32.lib;sfml-audio-s.lib;sfml-graphics-s.lib;sfml-main.lib;sfml-system-s.lib;sfml-window-s.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;winmm.lib;gdi32.lib;libnoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <SubSystem>Windows</SubSystem>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -145,6 +146,8 @@
     <ClCompile Include="Game_State.cpp" />
     <ClCompile Include="BGrass.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="noiseutils.cpp" />
     <ClCompile Include="RChunk.cpp" />
     <ClCompile Include="RMaster.cpp" />
     <ClCompile Include="Matrix_Maths.cpp" />
@@ -174,6 +177,8 @@
     <ClInclude Include="Game_State.h" />
     <ClInclude Include="Glm_Common.h" />
     <ClInclude Include="BGrass.h" />
+    <ClInclude Include="Noise.h" />
+    <ClInclude Include="noiseutils.h" />
     <ClInclude Include="RChunk.h" />
     <ClInclude Include="RMaster.h" />
     <ClInclude Include="Matrix_Maths.h" />

@@ -91,6 +91,12 @@
     <Filter Include="Fichiers sources\World\Chunk">
       <UniqueIdentifier>{84fe6cdf-0c29-42ba-871f-4f98c788f8c2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\HeightMap">
+      <UniqueIdentifier>{dc5dde4b-1de6-4d50-814a-737722c0685a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\HeightMap">
+      <UniqueIdentifier>{bb4bb556-0073-4749-8c7d-718a8eeea249}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="glew32.dll" />
@@ -184,6 +190,12 @@
     <ClCompile Include="Block_Position.cpp">
       <Filter>Fichiers sources\World\Block</Filter>
     </ClCompile>
+    <ClCompile Include="noiseutils.cpp">
+      <Filter>Fichiers sources\HeightMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Noise.cpp">
+      <Filter>Fichiers sources\HeightMap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_State.h">
@@ -269,6 +281,12 @@
     </ClInclude>
     <ClInclude Include="Block_Position.h">
       <Filter>Fichiers d%27en-tête\World\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="noiseutils.h">
+      <Filter>Fichiers d%27en-tête\HeightMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Noise.h">
+      <Filter>Fichiers d%27en-tête\HeightMap</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
