@@ -10,9 +10,14 @@ namespace HeightMap
 			~Noise();
 			void draw();
 	private:
-		double m_seed;
-		module::Perlin m_noise;
-		utils::NoiseMap heightMap;
-		utils::NoiseMapBuilderPlane heightMapBuilder;
+		long m_seed;
+		module::RidgedMulti m_mountainTerrain;
+		module::Billow m_baseFlatTerrain;
+		module::ScaleBias m_flatTerrain;
+		module::Perlin m_terrainType;
+		module::Select m_terrainSelector;
+		module::Turbulence m_finalTerrain;
+		utils::NoiseMap m_heightMap;
+		utils::NoiseMapBuilderPlane m_heightMapBuilder;
 	};
 }

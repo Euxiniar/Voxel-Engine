@@ -1,7 +1,3 @@
-﻿  noiseutils.cpp
-  Noise.cpp
-c:\users\charl\desktop\programmation\c++project\visualstudio\minecraft\minecraft\noise.cpp(9): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-  main.cpp
-  Génération de code en cours...
+﻿  Noise.cpp
   Minecraft.vcxproj -> C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Debug\Minecraft.exe
   Minecraft.vcxproj -> C:\Users\charl\Desktop\Programmation\C++project\VisualStudio\Minecraft\Debug\Minecraft.pdb (Partial PDB)

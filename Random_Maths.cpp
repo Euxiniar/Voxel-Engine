@@ -10,10 +10,13 @@ namespace Random
 		gen.seed(seed);
 	}
 
+	void init()
+	{
+		gen.seed(std::random_device{}());
+	}
 
 	int integer(int low, int high)
 	{
-		gen.seed(std::random_device{}());
 		std::uniform_int_distribution<int> dist(low, high);
 		return dist(gen);
 	}
