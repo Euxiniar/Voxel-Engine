@@ -5,7 +5,7 @@
 #include "Model.h"
 #include "Simple_Shader.h"
 #include "Texture_Atlas.h"
-
+#include "Noise.h"
 #include "Quad.h"
 
 class Application;
@@ -25,7 +25,7 @@ namespace State
 	private:
 		Shader::Simple_Shader m_shader;
 		Texture::Atlas m_texture;
-
+		HeightMap::Noise m_noise;
 		Quad m_quad;
 
 	};

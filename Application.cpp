@@ -83,6 +83,7 @@ void Application::resetSong()
 
 void Application::init()
 {
+	Random::init();
 	//Start the music
 	resetSong();
 }

@@ -5,6 +5,7 @@
 
 #include "RMaster.h"
 #include "Camera.h"
+#include <iostream>
 
 namespace State
 {
@@ -12,11 +13,15 @@ namespace State
 	Playing::Playing(Application& application)
 		: Game_State(application)
 		, m_texture("Texture_Atlas", 512, 16)
-		, m_quad(m_texture)
+		, m_quad(m_texture),
+		m_noise()
 	{
 		//m_texture.bind();
 
 		m_quad.position.z -= 5;
+		m_noise.setBound(0, 0);
+		m_quad.position.y = (float)(int) (m_noise.getPositionY(0,0)*35);
+		std::cout << m_quad.position.y;
 	}
 
 	void Playing::input(Camera& camera)
@@ -26,7 +31,7 @@ namespace State
 
 	void Playing::update(Camera& camera, float dt)
 	{
-		m_quad.rotation += .5;
+	//	m_quad.rotation += .5;
 		
 		//on appelle les input de la camera
 		camera.input(dt);

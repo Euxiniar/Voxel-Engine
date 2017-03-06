@@ -1,5 +1,6 @@
 #pragma once
 #include "noiseutils.h"
+#include <string>
 
 namespace HeightMap
 { 
@@ -7,10 +8,15 @@ namespace HeightMap
 	{
 		public:
 			Noise();
-			~Noise();
-			void draw();
+			void valley_Mountains();
+			void setBound(int positionX, int positionY);
+			double getPositionY(int x, int y);
+			void draw(std::string name);
 	private:
 		long m_seed;
+		void initTerrainSelector();
+		void initFinalTerrain();
+		void initHeightMapBuilder();
 		module::RidgedMulti m_mountainTerrain;
 		module::Billow m_baseFlatTerrain;
 		module::ScaleBias m_flatTerrain;
