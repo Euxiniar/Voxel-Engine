@@ -19,7 +19,7 @@ namespace Renderer
 		//on passe la matrice de vue au shader (donc la camera)
 		m_shader.setViewMatrix(Maths::createViewMatrix(camera));
 
-		for (auto& quad : m_quads) //TODO comprendre cette ligne
+		for (auto& quad : m_quads) //on affiche chacun des quads l'un apres l'autre
 		{
 			prepare(*quad);
 			glDrawElements(GL_TRIANGLES, quad->getModel().getIndicesCount(), GL_UNSIGNED_INT, nullptr);

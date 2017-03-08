@@ -14,13 +14,18 @@ namespace State
 		: Game_State(application)
 		, m_texture("Texture_Atlas", 512, 16)
 		, m_quad(m_texture),
+		m_quad2(m_texture),
 		m_noise()
 	{
 		//m_texture.bind();
 
-		m_quad.position.z -= 5;
+		
 		m_noise.setBound(0, 0);
-		m_quad.position.y = (float)(int) (m_noise.getPositionY(0,0)*35);
+		m_quad.position.z -= 5;
+		m_quad2.position.z -= 5;
+		m_quad2.position.x -= 1;
+		m_quad.position.y = (float)(int) (m_noise.getPositionY(0,0)*10);
+		m_quad2.position.y = (float)(int)(m_noise.getPositionY(1, 0) * 10);
 		std::cout << m_quad.position.y;
 	}
 
@@ -40,5 +45,6 @@ namespace State
 	void Playing::draw(Renderer::Master& renderer)
 	{
 		renderer.draw(m_quad);
+		renderer.draw(m_quad2);
 	}
 }

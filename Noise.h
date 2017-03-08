@@ -10,7 +10,7 @@ namespace HeightMap
 			Noise();
 			void valley_Mountains();
 			void setBound(int positionX, int positionY);
-			double getPositionY(int x, int y);
+			double getPositionY(int x, int z);
 			void draw(std::string name);
 	private:
 		long m_seed;

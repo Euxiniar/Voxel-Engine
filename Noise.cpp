@@ -84,8 +84,8 @@ namespace HeightMap
 		writer.WriteDestFile();
 	}
 
-	double Noise::getPositionY(int x, int y)
+	double Noise::getPositionY(int x, int z)
 	{
-		return m_heightMap.GetValue(x, y);
+		return m_heightMap.GetValue(x, z);
 	}
 }

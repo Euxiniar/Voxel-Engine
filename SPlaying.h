@@ -27,6 +27,7 @@ namespace State
 		Texture::Atlas m_texture;
 		HeightMap::Noise m_noise;
 		Quad m_quad;
+		Quad m_quad2;
 
 	};
 }

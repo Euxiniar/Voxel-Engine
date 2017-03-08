@@ -28,6 +28,11 @@ namespace Display
 		//permet qu'il n'y ait pas d'errer de superposition des faces
 		glEnable(GL_DEPTH_TEST);
 
+		//permet d'afficher uniquement les faces que l'on voit
+		glEnable(GL_CULL_FACE);
+		glCullFace(GL_FRONT);
+		glFrontFace(GL_CW);
+
 		window->setMouseCursorVisible(false);
 		window->setFramerateLimit(60);
 		window->setVerticalSyncEnabled(true);
